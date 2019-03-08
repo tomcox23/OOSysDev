@@ -4,6 +4,7 @@ BLACKJACK = 21
 DEALERS_RULE = 17
 AGGRESSIVE = 17
 PASSIVE = 16
+ROUND_NUM = 10
 
 num_round = 0
 wins = 0
@@ -59,7 +60,7 @@ class Player(object):
 
 if __name__ == "__main__":
 
-    while num_round != 10:
+    while num_round != ROUND_NUM:
         num_round += 1
 
         card_deck = Deck()
